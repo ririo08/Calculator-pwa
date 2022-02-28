@@ -1,0 +1,56 @@
+* {
+    box-sizing: border-box;
+}
+html, body {
+    position: fixed;
+}
+
+body {
+    margin: 10px;
+    background-color: black;
+    width: calc(100%-20px);
+    touch-action: none;
+}
+
+.result {
+    font-size: 8rem;
+    width: 100%;
+    border: none;
+    background-color: black;
+    color: white !important;
+    text-align: right;
+}
+
+.table {
+    margin: auto;
+    margin-right: 0;
+    text-align: center;
+}
+
+.btn {
+    aspect-ratio: 1/1 ;
+    width: 90px;
+    font-size: 3rem;
+    text-align: center;
+    border: none;
+    background-color: #323332;
+    color: white;
+}
+
+input[type="button"]{
+    -webkit-appearance: none;
+    border-radius: 45px;
+}
+
+.gray {
+    background-color: #a5a5a5;
+}
+
+.orange {
+    background-color: #fe9f17;
+}
+
+.long {
+    width: 100%;
+    aspect-ratio: 2/1;
+}

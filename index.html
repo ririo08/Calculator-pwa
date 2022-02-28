@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no minimal-ui">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<link rel="stylesheet" href="style.css">
+	<title>電卓</title>
+</head>
+
+<body>
+	<form class="wrapper">
+		<div class="top">
+			<input type="text" class="result" id="result" name="display" value="0">
+		</div>
+		<div class="bottom">
+			<table class="table">
+				<tr>
+					<td><input class="btn gray" type="button" value="AC" onclick="ac()"></td>
+					<td><input class="btn gray" type="button" value="+/-" onclick=""></td>
+					<td><input class="btn gray" type="button" value="%" onclick=""></td>
+					<td><input class="btn orange" type="button" value="÷" onclick=""></td>
+				</tr>
+				<tr>
+					<td><input class="btn" type="button" value="7" onclick="num(this)"></td>
+					<td><input class="btn" type="button" value="8" onclick="num(this)"></td>
+					<td><input class="btn" type="button" value="9" onclick="num(this)"></td>
+					<td><input class="btn orange" type="button" value="×" onclick=""></td>
+				</tr>
+				<tr>
+					<td><input class="btn" type="button" value="4" onclick="num(this)"></td>
+					<td><input class="btn" type="button" value="5" onclick="num(this)"></td>
+					<td><input class="btn" type="button" value="6" onclick="num(this)"></td>
+					<td><input class="btn orange" type="button" value="-" onclick=""></td>
+				</tr>
+				<tr>
+					<td><input class="btn" type="button" value="1" onclick="num(this)"></td>
+					<td><input class="btn" type="button" value="2" onclick="num(this)"></td>
+					<td><input class="btn" type="button" value="3" onclick="num(this)"></td>
+					<td><input class="btn orange" type="button" value="+" onclick="plus()"></td>
+				</tr>
+				<tr>
+					<td colspan="2"><input class="btn long" type="button" value="0" onclick="num(this)"></td>
+					<td><input class="btn" type="button" value="." onclick=""></td>
+					<td><input class="btn orange" type="button" value="=" onclick="equal()"></td>
+				</tr>
+			</table>
+		</div>
+	</form>
+	<script src="calc.js"></script>
+</body>
+
+</html>
